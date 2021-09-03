@@ -1,0 +1,25 @@
+
+#main-footer {
+    padding: 2em;
+    background: var(--color-primary);
+    color: var(--color-bg);
+    text-align: center;
+    .title {
+        text-transform: uppercase;
+    }
+    a {
+        color: var(--color-third);
+        text-decoration: none;
+    }
+}
+
+@media (min-width: 700px) {
+    #main-footer {
+        display: grid;
+        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+
+        div {
+            grid-column: span 2;
+        }
+    } 
+}

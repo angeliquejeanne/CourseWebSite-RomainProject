@@ -1,0 +1,97 @@
+#showcase {
+    min-height: 500px;
+    color: var(--color-primary);
+    text-align: center;
+
+    .overlay {
+        position: absolute;
+        height: 500px;
+        width: 100%;
+        background-color: rgba(217, 217, 217, 0.4);
+        z-index: 1;
+    }
+
+    .bg-image {
+        position: absolute;
+        background: url("https://images.pexels.com/photos/4841630/pexels-photo-4841630.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-4841630.jpg&fm=jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        min-height: 500px;
+        z-index: -1;
+    }
+
+    .content-wrap {
+        padding: 0 1.5em;
+        position: relative;
+        z-index: 10;
+
+        h1 {
+            padding: 80px 0px 50px 0px;
+            color: var(--color-text);
+            font-size: 40px;
+            font-weight: 500;
+        }
+        q {
+            color: var(--color-third);
+            font-size: 16px;
+            font-style: italic;
+        }
+        p {
+            color: var(--color-text);
+            padding: 90px 0px 40px;
+            font-size: 18px;
+        }
+        .btn {
+            border-radius: 5px;
+            border: 1px solid var(--color-third);
+            background-color: var(--color-third);
+            color: var(--color-four);
+        }
+        .btn:hover {
+            border: 1px solid var(--color-third);
+            background-color: var(--color-four);
+            color: var(--color-third);
+        }
+    }
+}
+@media screen and (max-width: 500px) {
+    #showcase {
+        .content-wrap {
+            width: 100%;
+
+            h1 {
+                padding: 30px 0px 50px 0px;
+                font-size: 1.8em;
+            }
+            q {
+                font-size: .8em;
+            }
+            p {
+                padding: 40px 0px 40px;
+                font-size: 1em;
+            }
+        }
+    }
+}
+@media (min-width: 500px) and (max-width: 760px) {
+    #showcase {
+        .content-wrap {
+            width: 100%;
+            
+            h1 {
+                padding: 60px 0px 50px 0px;
+                font-size: 2em;
+                font-weight: 500;
+            }
+            q {
+                font-size: .9em;
+            }
+            p {
+                padding: 60px 0px 40px;
+                font-size: 1.3em;
+            }
+        }
+    }
+}
