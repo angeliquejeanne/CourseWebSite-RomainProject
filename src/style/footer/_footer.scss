@@ -1,16 +1,24 @@
 
 #main-footer {
-    padding: 2em;
+    height: 50px;
+    padding: 1em;
     background: var(--color-primary);
-    color: var(--color-bg);
+    color: var(--color-four);
     text-align: center;
+
     .title {
         text-transform: uppercase;
     }
-    a {
-        color: var(--color-third);
-        text-decoration: none;
+    p {
+        margin: 0;
+        padding: 0;
+
+        a {
+            color: var(--color-third);
+            text-decoration: none;
+        }
     }
+    
 }
 
 @media (min-width: 700px) {

@@ -45,7 +45,17 @@ main {
 }
 
 #section-b {
-    padding: 2em 1em 1em;
+    padding: 1em;
+
+    h2 {
+        color: var(--color-four);
+        font-size: 34px;
+        font-weight: normal;
+    }
+    h3 {
+        color: var(--color-four);
+        font-weight: 400;
+    }
     ul {
         list-style: none;
         margin: 0;
@@ -56,8 +66,24 @@ main {
             background-color: var(--color-bg);
             color: var(--color-primary);
             .card {
+                img {
+                    filter: blur(1.5px);
+                }
                 .card-content {
                     padding: 1.5em;
+                    h3 {
+                        color: var(--color-primary);
+                        text-transform: uppercase;
+                    }
+                    p {
+                        color: var(--color-primary);
+                        text-transform: uppercase;
+                    }
+                }
+            }
+            .card:hover {
+                img {
+                    filter: blur(0px);
                 }
             }
         }

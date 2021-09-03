@@ -546,7 +546,18 @@ main #section-a .content-wrap .content-text div p {
 }
 
 #section-b {
-  padding: 2em 1em 1em;
+  padding: 1em;
+}
+
+#section-b h2 {
+  color: var(--color-four);
+  font-size: 34px;
+  font-weight: normal;
+}
+
+#section-b h3 {
+  color: var(--color-four);
+  font-weight: 400;
 }
 
 #section-b ul {
@@ -561,8 +572,28 @@ main #section-a .content-wrap .content-text div p {
   color: var(--color-primary);
 }
 
+#section-b ul li .card img {
+  -webkit-filter: blur(1.5px);
+          filter: blur(1.5px);
+}
+
 #section-b ul li .card .card-content {
   padding: 1.5em;
+}
+
+#section-b ul li .card .card-content h3 {
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+#section-b ul li .card .card-content p {
+  color: var(--color-primary);
+  text-transform: uppercase;
+}
+
+#section-b ul li .card:hover img {
+  -webkit-filter: blur(0px);
+          filter: blur(0px);
 }
 
 #section-c {
@@ -916,9 +947,10 @@ body .row.body form small {
 }
 
 #main-footer {
-  padding: 2em;
+  height: 50px;
+  padding: 1em;
   background: var(--color-primary);
-  color: var(--color-bg);
+  color: var(--color-four);
   text-align: center;
 }
 
@@ -926,7 +958,12 @@ body .row.body form small {
   text-transform: uppercase;
 }
 
-#main-footer a {
+#main-footer p {
+  margin: 0;
+  padding: 0;
+}
+
+#main-footer p a {
   color: var(--color-third);
   text-decoration: none;
 }
