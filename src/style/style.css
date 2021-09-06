@@ -167,13 +167,32 @@ p, a, div, button {
   display: inline-block;
 }
 
+.main-content .dropdown .dropdiv {
+  display: inline-block;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  font-size: .9em;
+  text-decoration: none;
+  padding: 15px;
+  white-space: nowrap;
+  color: var(--color-text);
+}
+
 .main-content .dropdown .dropbtn {
+  display: inline-block;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
   background-color: var(--color-third);
   color: var(--color-text);
   border: 1px solid var(--color-third);
   padding: 15px;
-  font-size: 16px;
-  border: none;
+  font-size: .9em;
   cursor: pointer;
 }
 
@@ -181,7 +200,7 @@ p, a, div, button {
   display: none;
   position: absolute;
   background-color: var(--color-bg);
-  min-width: 100px;
+  width: 100%;
   -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -267,15 +286,28 @@ p, a, div, button {
   display: inline-block;
 }
 
+.main-content .mobile-drawer .dropdown .dropdiv {
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 0px;
+  color: var(--color-bg);
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.main-content .mobile-drawer .dropdown .dropdiv:hover {
+  color: var(--color-second);
+  border-bottom: 1px solid var(--color-third);
+}
+
 .main-content .mobile-drawer .dropdown .dropbtn {
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
   background-color: var(--color-third);
   color: var(--color-four);
-  border: 1px solid var(--color-third);
-  padding: 10px;
-  font-weight: 400;
-  font-size: 20px;
-  border: none;
-  cursor: pointer;
+  padding: 10px 0px;
+  font-weight: 500;
 }
 
 .main-content .mobile-drawer .dropdown .dropdown-content {
@@ -606,6 +638,19 @@ main #section-a .content-wrap .content-text div p {
   padding: 2em;
   background-color: var(--color-primary);
   color: var(--color-bg);
+}
+
+.body-about {
+  background-color: var(--color-bg);
+}
+
+.body-about .about {
+  background-color: var(--color-bg);
+}
+
+.body-about .about #section-b {
+  background-color: var(--color-primary);
+  margin: 50px;
 }
 
 @media (min-width: 700px) {

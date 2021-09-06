@@ -59,20 +59,36 @@
         position: relative;
         display: inline-block;
       
+        .dropdiv {
+            display: inline-block;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0.1em;
+            transition: color 0.2s;
+            font-size: .9em;
+            text-decoration: none;
+            padding: 15px;
+            white-space: nowrap;
+            color: var(--color-text);
+        } 
         .dropbtn {
+            display: inline-block;
+            font-weight: 500;
+            font-style: normal;
+            letter-spacing: 0.1em;
+            transition: color 0.2s;
             background-color: var(--color-third);
             color: var(--color-text);
             border: 1px solid var(--color-third);
             padding: 15px;
-            font-size: 16px;
-            border: none;
+            font-size: .9em;
             cursor: pointer;
         }  
         .dropdown-content {
             display: none;
             position: absolute;
             background-color: var(--color-bg);
-            min-width: 100px;
+            width: 100%;
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
 
@@ -140,25 +156,32 @@
             cursor: pointer;
             font-size: 30px;
         }
-        // nav {
-        //     ul {
-        //         display: flex;
-        //         flex-direction: column;
-        //     }
-        // }
         .dropdown {
             position: relative;
             display: inline-block;
           
+            .dropdiv {
+                width: 200px;
+                text-align: center;
+                cursor: pointer;
+                padding: 10px 0px;
+                color: var(--color-bg);
+                border-bottom: 1px solid var(--color-primary);
+
+                &:hover {
+                    color: var(--color-second);
+                    border-bottom: 1px solid var(--color-third);
+                } 
+            } 
+
             .dropbtn {
+                width: 200px;
+                text-align: center;
+                cursor: pointer;
                 background-color: var(--color-third);
                 color: var(--color-four);
-                border: 1px solid var(--color-third);
-                padding: 10px;
-                font-weight: 400;
-                font-size: 20px;
-                border: none;
-                cursor: pointer;
+                padding: 10px 0px;                
+                font-weight: 500;
             }  
             .dropdown-content {
                 display: none;
