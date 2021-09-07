@@ -1,6 +1,6 @@
 
 #main-footer {
-    height: 50px;
+    height: 65px;
     padding: 1em;
     background: var(--color-primary);
     color: var(--color-four);
@@ -30,4 +30,15 @@
             grid-column: span 2;
         }
     } 
+}
+@media screen and (max-width: 699px) {
+    #main-footer {
+        height: 65px;
+        .title {
+            font-size: 1.2rem;
+        }
+        p {
+            font-size: .8rem;
+        }
+    }
 }

@@ -2,13 +2,15 @@ body {
     background-color: var(--color-primary);
     font-size: 100%;
     font-weight: 400;
+    height: 100vh;
+    width: 100%;
 
     div, textarea, input {
         -moz-box-sizing: border-box;
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
     }
-    .containerContact {
+    .contact-container {
         max-width: 760px;
         min-width: 300px;
         display: flex;
@@ -16,11 +18,10 @@ body {
         background-color: var(--color-bg);
         border: 1px solid var(--color-primary);
         border-bottom: 3px solid var(--color-primary);
-        // top: 50%;
-        // left: 50%;
         position: relative;
-        // transform: translate(50%, 50%);
-        margin: 25px auto;
+        margin: 45px auto 80px;
+        top: 45px;
+        height: 100%;
     }
     .row {
         width: 100%;
@@ -28,7 +29,7 @@ body {
         padding: 0 2.5em; 
     }
     .row.header {
-        padding: 1.5em 2.5em;
+        padding: 2.5em 2.5em;
         border-bottom: 3px solid var(--color-primary);
         background: url("https://images.pexels.com/photos/248515/pexels-photo-248515.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
         background-position: center;
@@ -36,6 +37,7 @@ body {
         background-size: cover;
         color: var(--color-bg);
         font-weight: 600;
+
         h1 {
         font-family: 'Lato', sans-serif;
         font-weight: 300;
@@ -151,43 +153,45 @@ body {
 }
 
 @media only screen and (max-width: 480px) {
-  .right {
-    float: none;
-  }
+    .contact-container {
+        margin: 15px auto;
+    }
+    .header {
+        margin-top: 25px;
+    }
+    .right {
+        float: none;
+    }
 
-  input {
-    width: 100%;
-  }
+    input {
+        width: 100%;
+    }
 
-  label {
-    width: 100%;
-    display: flex;
-    float: left;
-    clear: both;
-  }
+    label {
+        width: 100%;
+        display: flex;
+        float: left;
+        clear: both;
+    }
 
-  li, p {
-    width: 100%;
-  }
+    li, p {
+        width: 100%;
+    }
 
-  input.btn {
-    margin: 1.5em 0 0.5em;
-  }
+    input.btn {
+        margin: 1.5em 0 0.5em;
+    }
 
-//   h1 {
-//     font-size: 2.25em;
-//   }
+    h3 {
+        font-size: 1.125em;
+    }
 
-  h3 {
-    font-size: 1.125em;
-  }
-
-  li small {
-    display: none;
-  }
+    li small {
+        display: none;
+    }
 }
 @media (min-width: 480px) and (max-width:1024px){
-    .containerContact {
+    .contact-container {
         margin: 15px auto;
     }
 }

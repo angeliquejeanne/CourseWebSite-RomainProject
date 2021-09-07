@@ -1,5 +1,5 @@
 main {
-
+    
     #section-a {
         background: var(--color-bg);
         color: var(--color-primary);
@@ -89,6 +89,7 @@ main {
             }
         }
     }
+    
 }
 #section-c {
     background-color: var(--color-primary);
@@ -103,9 +104,11 @@ main {
         color: var(--color-bg);
     }
 }
-.body-about {
+.body {
     background-color: var(--color-bg);
-    
+    .main-content  {
+        margin-top: -50px;
+    }
     .about {
         background-color: var(--color-bg);
         #section-b {
@@ -248,6 +251,19 @@ main {
                     p {
                         font-size: 1rem;
                     }
+                }
+            }
+        }
+    }
+}
+.body {
+    .about {
+        #section-b {
+            margin: 50px auto;
+            
+            .card {
+                iframe {
+                    width: 100%;
                 }
             }
         }

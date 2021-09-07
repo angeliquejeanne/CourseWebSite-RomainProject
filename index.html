@@ -14,7 +14,7 @@
 
 <body>
 
-    <header class="main-content">
+    <header class="main-content opacity-header">
 
         <div class="overlay"></div>
 
@@ -22,7 +22,7 @@
             <i class="fas fa-times"></i>
             <a href="/index.html">Accueil</a>
             <a href="#showcase">Qui suis-je?</a>
-            <a href="">Les clefs</a>
+            <a href="#section-a">Les clefs</a>
             <div class="dropdown">
                 <div class="dropdiv">Mes programmes</div>
                 <div class="dropdown-content">
@@ -49,7 +49,7 @@
                 <div class="nav-links">
                     <a href="/index.html">Accueil</a>
                     <a href="#showcase">Qui suis-je?</a>
-                    <a href="">Les clefs</a>
+                    <a href="#section-a">Les clefs</a>
                     <div class="dropdown">
                         <div class="dropdiv">Mes programmes</div>
                         <div class="dropdown-content">
@@ -172,11 +172,8 @@
     </footer>
 
 <script src="https://code.jquery.com/jquery-3.4.1.slim.js"></script>
-<script>
-    $(".fa-bars, .fa-times, .mobile-drawer a").click(() => {
-    $(".mobile-drawer").toggleClass("active");
-});
-</script>
+<script src="./src/script/header-fix.js"></script>
+
 
 </body>
 </html>

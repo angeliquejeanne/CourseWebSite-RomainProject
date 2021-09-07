@@ -90,10 +90,286 @@ p, a, div, button {
   font-family: 'Playfair Display', serif;
 }
 
-.main-content {
+.opacity-header {
+  background-color: rgba(255, 250, 250, 0.5) !important;
+}
+
+.main-container {
   position: relative;
   width: 100%;
   min-height: 75px;
+  background-color: var(--color-bg);
+  border-bottom: 3px solid var(--color-third);
+  z-index: 50;
+}
+
+.main-container nav {
+  position: relative;
+  padding: 8px 0 0;
+  z-index: 2;
+}
+
+.main-container nav .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75px;
+}
+
+.main-container nav .wrapper .mobile-menu {
+  display: none;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 20px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.main-container nav .wrapper .logo {
+  font-size: 24px;
+  color: var(--color-primary);
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.main-container nav .wrapper .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-container nav .wrapper .nav-links a {
+  display: inline-block;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  font-size: .9em;
+  text-decoration: none;
+  padding: 15px;
+  white-space: nowrap;
+  color: var(--color-text);
+}
+
+.main-container nav .wrapper .nav-links a:hover {
+  border-bottom: 1px solid var(--color-third);
+}
+
+.main-container .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.main-container .dropdown .dropdiv {
+  display: inline-block;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  font-size: .9em;
+  text-decoration: none;
+  padding: 15px;
+  white-space: nowrap;
+  color: var(--color-text);
+}
+
+.main-container .dropdown .dropbtn {
+  display: inline-block;
+  font-weight: 500;
+  font-style: normal;
+  letter-spacing: 0.1em;
+  -webkit-transition: color 0.2s;
+  transition: color 0.2s;
+  background-color: var(--color-third);
+  color: var(--color-text);
+  border: 1px solid var(--color-third);
+  padding: 15px;
+  font-size: .9em;
+  cursor: pointer;
+}
+
+.main-container .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--color-bg);
+  width: 100%;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.main-container .dropdown .dropdown-content .dropdown-content a {
+  color: var(--color-text);
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.main-container .dropdown .dropdown-content:hover {
+  background-color: #f1f1f1;
+}
+
+.main-container .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.main-container .dropdown:hover .dropbtn {
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-third);
+  color: var(--color-text);
+}
+
+.main-container .mobile-drawer.active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+.main-container .mobile-drawer {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--color-third);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(8, 1, 32, 0.9);
+  font-weight: 400;
+  font-size: 20px;
+  z-index: 100;
+  -webkit-animation: fade-in 1s ease-in-out both;
+          animation: fade-in 1s ease-in-out both;
+}
+
+.main-container .mobile-drawer a {
+  width: 200px;
+  text-align: center;
+  padding: 10px 0px;
+  color: var(--color-bg);
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.main-container .mobile-drawer a:hover {
+  color: var(--color-second);
+  border-bottom: 1px solid var(--color-third);
+}
+
+.main-container .mobile-drawer i {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.main-container .mobile-drawer .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.main-container .mobile-drawer .dropdown .dropdiv {
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 0px;
+  color: var(--color-bg);
+  border-bottom: 1px solid var(--color-primary);
+}
+
+.main-container .mobile-drawer .dropdown .dropdiv:hover {
+  color: var(--color-second);
+  border-bottom: 1px solid var(--color-third);
+}
+
+.main-container .mobile-drawer .dropdown .dropbtn {
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  background-color: var(--color-third);
+  color: var(--color-four);
+  padding: 10px 0px;
+  font-weight: 500;
+}
+
+.main-container .mobile-drawer .dropdown .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgba(8, 1, 32, 0.9);
+  min-width: 100px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--color-second);
+  z-index: 1;
+}
+
+.main-container .mobile-drawer .dropdown .dropdown-content a {
+  color: var(--color-bg);
+  margin: 5px auto;
+  padding: 10px;
+  text-decoration: none;
+  display: block;
+}
+
+.main-container .mobile-drawer .dropdown .dropdown-content a:hover {
+  color: var(--color-third);
+}
+
+.main-container .mobile-drawer .dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.main-container .mobile-drawer .dropdown:hover .dropbtn {
+  background-color: var(--color-third);
+  border: 1px solid var(--color-third);
+  color: var(--color-text);
+}
+
+.main-container .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(217, 217, 217, 0.478);
+  z-index: 1;
+}
+
+.main-container .wrapper {
+  position: relative;
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 30px;
+  z-index: 2;
+}
+
+.main-content {
+  position: fixed;
+  width: 100%;
+  height: 75px;
   background-color: var(--color-bg);
   border-bottom: 3px solid var(--color-third);
   z-index: 50;
@@ -486,12 +762,24 @@ p, a, div, button {
   color: var(--color-third);
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 760px) {
+  #showcase {
+    height: 100vh;
+    width: 100%;
+  }
+  #showcase .overlay {
+    height: 100%;
+    width: 100%;
+  }
+  #showcase .bg-image {
+    height: 100%;
+    width: 100%;
+  }
   #showcase .content-wrap {
     width: 100%;
   }
   #showcase .content-wrap h1 {
-    padding: 30px 0px 50px 0px;
+    padding: 100px 0px 50px 0px;
     font-size: 1.8em;
   }
   #showcase .content-wrap q {
@@ -500,24 +788,6 @@ p, a, div, button {
   #showcase .content-wrap p {
     padding: 40px 0px 40px;
     font-size: 1em;
-  }
-}
-
-@media (min-width: 500px) and (max-width: 760px) {
-  #showcase .content-wrap {
-    width: 100%;
-  }
-  #showcase .content-wrap h1 {
-    padding: 60px 0px 50px 0px;
-    font-size: 2em;
-    font-weight: 500;
-  }
-  #showcase .content-wrap q {
-    font-size: .9em;
-  }
-  #showcase .content-wrap p {
-    padding: 60px 0px 40px;
-    font-size: 1.3em;
   }
 }
 
@@ -640,15 +910,19 @@ main #section-a .content-wrap .content-text div p {
   color: var(--color-bg);
 }
 
-.body-about {
+.body {
   background-color: var(--color-bg);
 }
 
-.body-about .about {
+.body .main-content {
+  margin-top: -50px;
+}
+
+.body .about {
   background-color: var(--color-bg);
 }
 
-.body-about .about #section-b {
+.body .about #section-b {
   background-color: var(--color-primary);
   margin: 50px;
 }
@@ -779,6 +1053,12 @@ main #section-a .content-wrap .content-text div p {
   main #section-a .content-wrap .content-text div p {
     font-size: 1rem;
   }
+  .body .about #section-b {
+    margin: 50px auto;
+  }
+  .body .about #section-b .card iframe {
+    width: 100%;
+  }
   .box:first-child {
     border-right: 2px solid transparent;
     border-top: 2px solid var(--color-primary);
@@ -790,6 +1070,8 @@ body {
   background-color: var(--color-primary);
   font-size: 100%;
   font-weight: 400;
+  height: 100vh;
+  width: 100%;
 }
 
 body div, body textarea, body input {
@@ -797,7 +1079,7 @@ body div, body textarea, body input {
   box-sizing: border-box;
 }
 
-body .containerContact {
+body .contact-container {
   max-width: 760px;
   min-width: 300px;
   display: -webkit-box;
@@ -811,7 +1093,9 @@ body .containerContact {
   border: 1px solid var(--color-primary);
   border-bottom: 3px solid var(--color-primary);
   position: relative;
-  margin: 25px auto;
+  margin: 45px auto 80px;
+  top: 45px;
+  height: 100%;
 }
 
 body .row {
@@ -821,7 +1105,7 @@ body .row {
 }
 
 body .row.header {
-  padding: 1.5em 2.5em;
+  padding: 2.5em 2.5em;
   border-bottom: 3px solid var(--color-primary);
   background: url("https://images.pexels.com/photos/248515/pexels-photo-248515.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-position: center;
@@ -957,6 +1241,12 @@ body .row.body form small {
 }
 
 @media only screen and (max-width: 480px) {
+  .contact-container {
+    margin: 15px auto;
+  }
+  .header {
+    margin-top: 25px;
+  }
   .right {
     float: none;
   }
@@ -986,13 +1276,13 @@ body .row.body form small {
 }
 
 @media (min-width: 480px) and (max-width: 1024px) {
-  .containerContact {
+  .contact-container {
     margin: 15px auto;
   }
 }
 
 #main-footer {
-  height: 50px;
+  height: 65px;
   padding: 1em;
   background: var(--color-primary);
   color: var(--color-four);
@@ -1022,6 +1312,18 @@ body .row.body form small {
   }
   #main-footer div {
     grid-column: span 2;
+  }
+}
+
+@media screen and (max-width: 699px) {
+  #main-footer {
+    height: 65px;
+  }
+  #main-footer .title {
+    font-size: 1.2rem;
+  }
+  #main-footer p {
+    font-size: .8rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
