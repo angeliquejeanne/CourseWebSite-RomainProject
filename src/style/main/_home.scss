@@ -45,7 +45,7 @@ main {
     }
 }
 
-#section-e {
+#section-b {
     padding: 1em;
 
     h2 {
@@ -111,23 +111,11 @@ main {
     }
     .about {
         background-color: var(--color-bg);
-        #section-e {
+        #section-b {
             background-color: var(--color-primary);
             margin: 50px;
-            p {
-                color: var(--color-four);
-                font-size: 1.2rem;
-            }
+
             div {
-                display: flex;
-                img {
-                    margin-top: 50px;
-                    width: 270px;
-                    height: 365px;
-                }
-                .text {
-                    flex-direction: column;
-                }
                 p {
                     color: var(--color-four);
                     font-size: 1.2rem;
@@ -137,7 +125,7 @@ main {
     }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 700px) {
     main {
         .grid {
             display: grid;
@@ -145,19 +133,14 @@ main {
         }
         
 
-        #section-e {
-            div {
+        #section-b {
+            ul {
                 grid-column: 2/4;
                 display: flex;
                 justify-content: space-around;
-                flex-direction: row;
-                img {
-                    margin: 50px auto;
-                    width: 270px;
-                    height: 365px;
-                }
-                div {
-                    flex-direction: column;
+
+                li {
+                    width: 31%;
                 }
             }
         }
@@ -282,28 +265,12 @@ main {
 }
 .body {
     .about {
-        #section-e {
+        #section-b {
             margin: 50px auto;
             
             .card {
                 iframe {
                     width: 100%;
-                }
-            }
-            div {
-                display: flex;
-                flex-direction: column;
-                img {
-                    margin: 50px auto;
-                    width: 270px;
-                    height: 365px;
-                }
-                .text {
-                    flex-direction: column;
-                }
-                p {
-                    color: var(--color-four);
-                    font-size: 1.2rem;
                 }
             }
         }
