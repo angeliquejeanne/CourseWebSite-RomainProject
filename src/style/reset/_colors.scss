@@ -11,8 +11,9 @@
 button, .btn {
     background-color: var(--color-third);
     color: var(--color-four);
-    border: none;
+    border: 1px solid transparent;
 }
+
 button:hover, .btn:hover {
     background-color: var(--color-four);
     color: var(--color-third);
