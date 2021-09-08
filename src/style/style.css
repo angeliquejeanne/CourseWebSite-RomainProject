@@ -927,6 +927,11 @@ main #section-a .content-wrap .content-text div p {
   margin: 50px;
 }
 
+.body .about #section-b div p {
+  color: var(--color-four);
+  font-size: 1.2rem;
+}
+
 @media (min-width: 700px) {
   main .grid {
     display: -ms-grid;

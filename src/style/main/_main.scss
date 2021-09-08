@@ -114,6 +114,13 @@ main {
         #section-b {
             background-color: var(--color-primary);
             margin: 50px;
+
+            div {
+                p {
+                    color: var(--color-four);
+                    font-size: 1.2rem;
+                }
+            }
         }
     }
 }
