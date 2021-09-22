@@ -474,6 +474,7 @@ p, a, div, button {
   padding: 15px;
   font-size: .9em;
   cursor: pointer;
+  width: 125px;
 }
 
 .main-content .dropdown .dropdown-content {
@@ -703,21 +704,21 @@ p, a, div, button {
   }
 }
 
-body #showcase {
+#showcase {
   min-height: 500px;
   color: var(--color-primary);
   text-align: center;
 }
 
-body #showcase .overlay {
+#showcase .overlay {
   position: absolute;
-  height: 500px;
+  min-height: 500px;
   width: 100%;
   background-color: rgba(217, 217, 217, 0.4);
   z-index: 1;
 }
 
-body #showcase .bg-image {
+#showcase .bg-image {
   position: absolute;
   background-image: url("https://images.pexels.com/photos/4841630/pexels-photo-4841630.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-4841630.jpg&fm=jpg");
   background-position: center;
@@ -728,39 +729,39 @@ body #showcase .bg-image {
   z-index: -1;
 }
 
-body #showcase .content-wrap {
+#showcase .content-wrap {
   padding: 0 1.5em;
   position: relative;
   z-index: 10;
 }
 
-body #showcase .content-wrap h1 {
+#showcase .content-wrap h1 {
   padding: 80px 0px 50px 0px;
   color: var(--color-text);
   font-size: 40px;
   font-weight: 500;
 }
 
-body #showcase .content-wrap q {
+#showcase .content-wrap q {
   color: var(--color-third);
   font-size: 16px;
   font-style: italic;
 }
 
-body #showcase .content-wrap p {
+#showcase .content-wrap p {
   color: var(--color-text);
   padding: 90px 0px 40px;
   font-size: 18px;
 }
 
-body #showcase .content-wrap .btn {
+#showcase .content-wrap .btn {
   border-radius: 5px;
   border: 1px solid var(--color-third);
   background-color: var(--color-third);
   color: var(--color-four);
 }
 
-body #showcase .content-wrap .btn:hover {
+#showcase .content-wrap .btn:hover {
   border: 1px solid var(--color-third);
   background-color: var(--color-four);
   color: var(--color-third);
@@ -784,7 +785,7 @@ body #showcase .content-wrap .btn:hover {
   }
   #showcase .content-wrap h1 {
     padding: 100px 0px 50px 0px;
-    font-size: 1.8em;
+    font-size: 30px;
   }
   #showcase .content-wrap q {
     font-size: .8em;
