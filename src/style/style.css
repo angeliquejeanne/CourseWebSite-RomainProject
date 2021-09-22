@@ -78,6 +78,10 @@ button:hover, .btn:hover {
   border: 1px solid var(--color-third);
 }
 
+:root {
+  --img-primary: url("../../img/Etudiant-en-visio.jpg");
+}
+
 h1, h2, h3, h4, h5, h6, q {
   font-family: 'Playfair Display', serif;
 }
@@ -699,13 +703,13 @@ p, a, div, button {
   }
 }
 
-#showcase {
+body #showcase {
   min-height: 500px;
   color: var(--color-primary);
   text-align: center;
 }
 
-#showcase .overlay {
+body #showcase .overlay {
   position: absolute;
   height: 500px;
   width: 100%;
@@ -713,9 +717,9 @@ p, a, div, button {
   z-index: 1;
 }
 
-#showcase .bg-image {
+body #showcase .bg-image {
   position: absolute;
-  background: url("https://images.pexels.com/photos/4841630/pexels-photo-4841630.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-4841630.jpg&fm=jpg");
+  background-image: url("https://images.pexels.com/photos/4841630/pexels-photo-4841630.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-4841630.jpg&fm=jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -724,39 +728,39 @@ p, a, div, button {
   z-index: -1;
 }
 
-#showcase .content-wrap {
+body #showcase .content-wrap {
   padding: 0 1.5em;
   position: relative;
   z-index: 10;
 }
 
-#showcase .content-wrap h1 {
+body #showcase .content-wrap h1 {
   padding: 80px 0px 50px 0px;
   color: var(--color-text);
   font-size: 40px;
   font-weight: 500;
 }
 
-#showcase .content-wrap q {
+body #showcase .content-wrap q {
   color: var(--color-third);
   font-size: 16px;
   font-style: italic;
 }
 
-#showcase .content-wrap p {
+body #showcase .content-wrap p {
   color: var(--color-text);
   padding: 90px 0px 40px;
   font-size: 18px;
 }
 
-#showcase .content-wrap .btn {
+body #showcase .content-wrap .btn {
   border-radius: 5px;
   border: 1px solid var(--color-third);
   background-color: var(--color-third);
   color: var(--color-four);
 }
 
-#showcase .content-wrap .btn:hover {
+body #showcase .content-wrap .btn:hover {
   border: 1px solid var(--color-third);
   background-color: var(--color-four);
   color: var(--color-third);
@@ -1218,10 +1222,13 @@ main #section-a .content-wrap .content-text div p {
   display: flex;
 }
 
-.body .about #section-e div img {
+.body .about #section-e div .img-section-e {
   margin-top: 50px;
-  width: 270px;
-  height: 365px;
+  width: 300px;
+  height: 425px;
+  -webkit-box-shadow: 10px 10px 2px 0px rgba(17, 17, 17, 0.5);
+  box-shadow: 10px 10px 2px 0px rgba(17, 17, 17, 0.5);
+  margin-top: 3%;
 }
 
 .body .about #section-e div .text {
@@ -1256,15 +1263,32 @@ main #section-a .content-wrap .content-text div p {
             flex-direction: row;
   }
   main #section-e div img {
-    margin: 50px auto;
-    width: 270px;
-    height: 365px;
+    margin: 3% auto;
+    width: 300px;
+    height: 425px;
+    -webkit-box-shadow: 10px 10px 2px 0px rgba(255, 255, 255, 0.5);
+    box-shadow: 10px 10px 2px 0px rgba(255, 255, 255, 0.5);
+    margin-top: 3%;
   }
   main #section-e div div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-left: 25px;
+    text-align: left;
+  }
+  main #section-e:nth-child(2), main #section-e:nth-child(4) {
+    margin: 0 auto;
+  }
+  main #section-e:nth-child(2) h2, main #section-e:nth-child(4) h2 {
+    margin: 0px auto;
+    max-width: 1000px;
+  }
+  main #section-e:nth-child(2) p, main #section-e:nth-child(4) p {
+    text-align: left;
+    margin: 0px auto;
+    max-width: 800px;
   }
   main #section-c .content-wrap {
     -ms-grid-column: 2;
@@ -1377,6 +1401,12 @@ main #section-a .content-wrap .content-text div p {
   .body .about #section-e {
     margin: 50px auto;
   }
+  .body .about #section-e h2 {
+    font-size: 25px;
+  }
+  .body .about #section-e p {
+    font-size: 1rem;
+  }
   .body .about #section-e .card iframe {
     width: 100%;
   }
@@ -1393,6 +1423,8 @@ main #section-a .content-wrap .content-text div p {
     margin: 50px auto;
     width: 270px;
     height: 365px;
+    -webkit-box-shadow: 10px 10px 2px 0px rgba(255, 255, 255, 0.5);
+    box-shadow: 10px 10px 2px 0px rgba(255, 255, 255, 0.5);
   }
   .body .about #section-e div .text {
     -webkit-box-orient: vertical;
@@ -1439,20 +1471,17 @@ body .contact-container {
   border-bottom: 3px solid var(--color-primary);
   position: relative;
   margin: 45px auto 80px;
-  top: 45px;
-  height: 100%;
 }
 
 body .row {
   width: 100%;
-  margin: 0 0 1em 0;
   padding: 0 2.5em;
 }
 
 body .row.header {
   padding: 2.5em 2.5em;
   border-bottom: 3px solid var(--color-primary);
-  background: url("https://images.pexels.com/photos/248515/pexels-photo-248515.png?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
+  background: url("https://images.pexels.com/photos/450035/pexels-photo-450035.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1466,19 +1495,23 @@ body .row.header h1 {
   display: inline-block;
   font-weight: 100;
   font-size: 2.8125em;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid var(--color-third);
   margin: 0 0 0.1em 0;
   padding: 0 0 0.4em 0;
+  color: var(--color-primary);
+  text-shadow: var(--color-second) 2px 0 10px;
 }
 
 body .row.header h3 {
   font-weight: 400;
   font-size: 1.25em;
   margin: 1em 0 0.4em 0;
+  color: var(--color-four);
 }
 
 body .row.body {
   padding: .5em 2.5em 1em;
+  background-color: var(--color-four);
 }
 
 body .row.body form {
@@ -1561,23 +1594,26 @@ body .row.body form ul li .btn.btn-submit:hover {
 body .row.body form label {
   display: block;
   margin: 0 0 0.5em 0;
-  color: var(--color-primary);
+  color: var(--color-text);
   font-size: 1em;
 }
 
 body .row.body form input {
   margin: 0 0 0.5em 0;
-  border: 1px solid grey;
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-second);
   padding: 6px 10px;
-  color: #555;
+  color: var(--color-text);
   font-size: 1em;
 }
 
 body .row.body form textarea {
-  border: 1px solid #ccc;
+  border: 1px solid var(--color-primary);
+  background-color: var(--color-second);
   padding: 6px 10px;
   width: 100%;
-  color: #555;
+  height: 200px;
+  color: var(--color-text);
 }
 
 body .row.body form small {
@@ -1585,12 +1621,15 @@ body .row.body form small {
   margin: 0 0 0 0.5em;
 }
 
+@media screen and (min-width: 320px) {
+  body .contact-container {
+    top: 45px;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   .contact-container {
     margin: 15px auto;
-  }
-  .header {
-    margin-top: 25px;
   }
   .right {
     float: none;

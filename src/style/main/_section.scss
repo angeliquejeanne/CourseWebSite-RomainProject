@@ -1,4 +1,5 @@
-#showcase {
+body {
+    #showcase {
     min-height: 500px;
     color: var(--color-primary);
     text-align: center;
@@ -13,7 +14,8 @@
 
     .bg-image {
         position: absolute;
-        background: url("https://images.pexels.com/photos/4841630/pexels-photo-4841630.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-4841630.jpg&fm=jpg");
+        background-image: url("https://images.pexels.com/photos/4841630/pexels-photo-4841630.jpeg?cs=srgb&dl=pexels-tima-miroshnichenko-4841630.jpg&fm=jpg");
+        // background-image: url("../../img/Etudiant-en-visio.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -56,10 +58,13 @@
         }
     }
 }
+}
+
 @media screen and (max-width: 760px) {
     #showcase {
         height: 100vh;
         width: 100%;
+
         .overlay {
             height: 100%;
             width: 100%;

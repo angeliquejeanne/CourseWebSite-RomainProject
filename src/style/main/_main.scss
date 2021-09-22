@@ -120,10 +120,14 @@ main {
             }
             div {
                 display: flex;
-                img {
+
+                .img-section-e {
                     margin-top: 50px;
-                    width: 270px;
-                    height: 365px;
+                    width: 300px;
+                    height: 425px;
+                    -webkit-box-shadow: 10px 10px 2px 0px rgba(17, 17, 17, 0.5);
+                    box-shadow: 10px 10px 2px 0px rgba(17, 17, 17, 0.5);
+                    margin-top: 3%;
                 }
                 .text {
                     flex-direction: column;
@@ -152,12 +156,30 @@ main {
                 justify-content: space-around;
                 flex-direction: row;
                 img {
-                    margin: 50px auto;
-                    width: 270px;
-                    height: 365px;
+                    margin: 3% auto;
+                    width: 300px;
+                    height: 425px;
+                    -webkit-box-shadow: 10px 10px 2px 0px rgba(255, 255, 255, 0.5);
+                    box-shadow: 10px 10px 2px 0px rgba(255, 255, 255, 0.5);
+                    margin-top: 3%;
                 }
                 div {
                     flex-direction: column;
+                    padding-left: 25px;
+                    text-align: left;
+                }
+            }
+            &:nth-child(2), &:nth-child(4) {
+
+                margin: 0 auto;
+                h2 {
+                    margin: 0px auto;
+                    max-width: 1000px;
+                }
+                p {
+                    text-align: left;
+                    margin: 0px auto;
+                    max-width: 800px;
                 }
             }
         }
@@ -284,7 +306,12 @@ main {
     .about {
         #section-e {
             margin: 50px auto;
-            
+            h2 {
+                font-size: 25px;
+            }
+            p {
+                font-size: 1rem;
+            }
             .card {
                 iframe {
                     width: 100%;
@@ -297,6 +324,8 @@ main {
                     margin: 50px auto;
                     width: 270px;
                     height: 365px;
+                    -webkit-box-shadow: 10px 10px 2px 0px rgba(255, 255, 255, 0.5);
+                    box-shadow: 10px 10px 2px 0px rgba(255, 255, 255, 0.5);
                 }
                 .text {
                     flex-direction: column;
