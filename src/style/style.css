@@ -20,7 +20,7 @@ body {
 
 img {
   display: block;
-  width: 100%;
+  width: auto;
   height: auto;
 }
 
@@ -1132,53 +1132,84 @@ main #section-a .content-wrap .content-text div p {
   font-size: 1.2rem;
 }
 
-#section-e {
+#section-e,
+#section-e2,
+#section-e3,
+#section-e4 {
   padding: 1em;
 }
 
-#section-e h2 {
+#section-e h2,
+#section-e2 h2,
+#section-e3 h2,
+#section-e4 h2 {
   color: var(--color-four);
   font-size: 34px;
   font-weight: normal;
+  text-transform: uppercase;
 }
 
-#section-e h3 {
+#section-e h3,
+#section-e2 h3,
+#section-e3 h3,
+#section-e4 h3 {
   color: var(--color-four);
   font-weight: 400;
 }
 
-#section-e ul {
+#section-e ul,
+#section-e2 ul,
+#section-e3 ul,
+#section-e4 ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
 
-#section-e ul li {
+#section-e ul li,
+#section-e2 ul li,
+#section-e3 ul li,
+#section-e4 ul li {
   margin-bottom: 1em;
   background-color: var(--color-bg);
   color: var(--color-primary);
 }
 
-#section-e ul li .card img {
+#section-e ul li .card img,
+#section-e2 ul li .card img,
+#section-e3 ul li .card img,
+#section-e4 ul li .card img {
   -webkit-filter: blur(1.5px);
           filter: blur(1.5px);
 }
 
-#section-e ul li .card .card-content {
+#section-e ul li .card .card-content,
+#section-e2 ul li .card .card-content,
+#section-e3 ul li .card .card-content,
+#section-e4 ul li .card .card-content {
   padding: 1.5em;
 }
 
-#section-e ul li .card .card-content h3 {
+#section-e ul li .card .card-content h3,
+#section-e2 ul li .card .card-content h3,
+#section-e3 ul li .card .card-content h3,
+#section-e4 ul li .card .card-content h3 {
   color: var(--color-primary);
   text-transform: uppercase;
 }
 
-#section-e ul li .card .card-content p {
+#section-e ul li .card .card-content p,
+#section-e2 ul li .card .card-content p,
+#section-e3 ul li .card .card-content p,
+#section-e4 ul li .card .card-content p {
   color: var(--color-primary);
   text-transform: uppercase;
 }
 
-#section-e ul li .card:hover img {
+#section-e ul li .card:hover img,
+#section-e2 ul li .card:hover img,
+#section-e3 ul li .card:hover img,
+#section-e4 ul li .card:hover img {
   -webkit-filter: blur(0px);
           filter: blur(0px);
 }
@@ -1207,23 +1238,35 @@ main #section-a .content-wrap .content-text div p {
   background-color: var(--color-bg);
 }
 
-.body .about #section-e {
+.body .about #section-e,
+.body .about #section-e2,
+.body .about #section-e3,
+.body .about #section-e4 {
   background-color: var(--color-primary);
   margin: 50px;
 }
 
-.body .about #section-e p {
+.body .about #section-e p,
+.body .about #section-e2 p,
+.body .about #section-e3 p,
+.body .about #section-e4 p {
   color: var(--color-four);
   font-size: 1.2rem;
 }
 
-.body .about #section-e div {
+.body .about #section-e div,
+.body .about #section-e2 div,
+.body .about #section-e3 div,
+.body .about #section-e4 div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.body .about #section-e div .img-section-e {
+.body .about #section-e div .img-section-e,
+.body .about #section-e2 div .img-section-e,
+.body .about #section-e3 div .img-section-e,
+.body .about #section-e4 div .img-section-e {
   margin-top: 50px;
   width: 300px;
   height: 425px;
@@ -1232,14 +1275,20 @@ main #section-a .content-wrap .content-text div p {
   margin-top: 3%;
 }
 
-.body .about #section-e div .text {
+.body .about #section-e div .text,
+.body .about #section-e2 div .text,
+.body .about #section-e3 div .text,
+.body .about #section-e4 div .text {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-.body .about #section-e div p {
+.body .about #section-e div p,
+.body .about #section-e2 div p,
+.body .about #section-e3 div p,
+.body .about #section-e4 div p {
   color: var(--color-four);
   font-size: 1.2rem;
 }
@@ -1249,7 +1298,10 @@ main #section-a .content-wrap .content-text div p {
     display: -ms-grid;
     display: grid;
   }
-  main #section-e div {
+  main #section-e div,
+  main #section-e2 div,
+  main #section-e3 div,
+  main #section-e4 div {
     -ms-grid-column: 2;
     -ms-grid-column-span: 2;
     grid-column: 2/4;
@@ -1263,33 +1315,68 @@ main #section-a .content-wrap .content-text div p {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  main #section-e div img {
+  main #section-e div img,
+  main #section-e2 div img,
+  main #section-e3 div img,
+  main #section-e4 div img {
     margin: 3% auto;
-    width: 300px;
-    height: 425px;
+    height: 500px;
     -webkit-box-shadow: 10px 10px 2px 0px rgba(255, 255, 255, 0.5);
     box-shadow: 10px 10px 2px 0px rgba(255, 255, 255, 0.5);
     margin-top: 3%;
   }
-  main #section-e div div {
+  main #section-e div div,
+  main #section-e2 div div,
+  main #section-e3 div div,
+  main #section-e4 div div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-left: 25px;
+    padding-left: 20px;
     text-align: left;
   }
-  main #section-e:nth-child(2), main #section-e:nth-child(4) {
+  main #section-e #section-e2, main #section-e #section-e4,
+  main #section-e2 #section-e2,
+  main #section-e2 #section-e4,
+  main #section-e3 #section-e2,
+  main #section-e3 #section-e4,
+  main #section-e4 #section-e2,
+  main #section-e4 #section-e4 {
     margin: 0 auto;
   }
-  main #section-e:nth-child(2) h2, main #section-e:nth-child(4) h2 {
+  main #section-e #section-e2 h2, main #section-e #section-e4 h2,
+  main #section-e2 #section-e2 h2,
+  main #section-e2 #section-e4 h2,
+  main #section-e3 #section-e2 h2,
+  main #section-e3 #section-e4 h2,
+  main #section-e4 #section-e2 h2,
+  main #section-e4 #section-e4 h2 {
     margin: 0px auto;
     max-width: 1000px;
   }
-  main #section-e:nth-child(2) p, main #section-e:nth-child(4) p {
+  main #section-e #section-e2 p, main #section-e #section-e4 p,
+  main #section-e2 #section-e2 p,
+  main #section-e2 #section-e4 p,
+  main #section-e3 #section-e2 p,
+  main #section-e3 #section-e4 p,
+  main #section-e4 #section-e2 p,
+  main #section-e4 #section-e4 p {
     text-align: left;
     margin: 0px auto;
     max-width: 800px;
+  }
+  main #section-e #section-e p, main #section-e #section-e3 p,
+  main #section-e2 #section-e p,
+  main #section-e2 #section-e3 p,
+  main #section-e3 #section-e p,
+  main #section-e3 #section-e3 p,
+  main #section-e4 #section-e p,
+  main #section-e4 #section-e3 p {
+    text-align: left;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1000px;
   }
   main #section-c .content-wrap {
     -ms-grid-column: 2;
@@ -1399,19 +1486,34 @@ main #section-a .content-wrap .content-text div p {
   main #section-a .content-wrap .content-text div p {
     font-size: 1rem;
   }
-  .body .about #section-e {
+  .body .about #section-e,
+  .body .about #section-e2,
+  .body .about #section-e3,
+  .body .about #section-e4 {
     margin: 50px auto;
   }
-  .body .about #section-e h2 {
+  .body .about #section-e h2,
+  .body .about #section-e2 h2,
+  .body .about #section-e3 h2,
+  .body .about #section-e4 h2 {
     font-size: 25px;
   }
-  .body .about #section-e p {
+  .body .about #section-e p,
+  .body .about #section-e2 p,
+  .body .about #section-e3 p,
+  .body .about #section-e4 p {
     font-size: 1rem;
   }
-  .body .about #section-e .card iframe {
+  .body .about #section-e .card iframe,
+  .body .about #section-e2 .card iframe,
+  .body .about #section-e3 .card iframe,
+  .body .about #section-e4 .card iframe {
     width: 100%;
   }
-  .body .about #section-e div {
+  .body .about #section-e div,
+  .body .about #section-e2 div,
+  .body .about #section-e3 div,
+  .body .about #section-e4 div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1420,20 +1522,28 @@ main #section-a .content-wrap .content-text div p {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .body .about #section-e div img {
+  .body .about #section-e div img,
+  .body .about #section-e2 div img,
+  .body .about #section-e3 div img,
+  .body .about #section-e4 div img {
     margin: 50px auto;
-    width: 270px;
-    height: 365px;
+    max-height: 395px;
     -webkit-box-shadow: 10px 10px 2px 0px rgba(255, 255, 255, 0.5);
     box-shadow: 10px 10px 2px 0px rgba(255, 255, 255, 0.5);
   }
-  .body .about #section-e div .text {
+  .body .about #section-e div .text,
+  .body .about #section-e2 div .text,
+  .body .about #section-e3 div .text,
+  .body .about #section-e4 div .text {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .body .about #section-e div p {
+  .body .about #section-e div p,
+  .body .about #section-e2 div p,
+  .body .about #section-e3 div p,
+  .body .about #section-e4 div p {
     color: var(--color-four);
     font-size: 1.2rem;
   }
@@ -1692,8 +1802,8 @@ body .row.body form small {
   #main-footer {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: 1fr (minmax(auto, 25em))[2] 1fr;
-        grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+    -ms-grid-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
   }
   #main-footer div {
     grid-column: span 2;

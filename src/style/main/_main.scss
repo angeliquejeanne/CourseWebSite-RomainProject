@@ -45,13 +45,17 @@ main {
     }
 }
 
-#section-e {
+#section-e,
+#section-e2,
+#section-e3,
+#section-e4 {
     padding: 1em;
 
     h2 {
         color: var(--color-four);
         font-size: 34px;
         font-weight: normal;
+        text-transform: uppercase;
     }
     h3 {
         color: var(--color-four);
@@ -111,7 +115,10 @@ main {
     }
     .about {
         background-color: var(--color-bg);
-        #section-e {
+        #section-e,
+        #section-e2,
+        #section-e3,
+        #section-e4 {
             background-color: var(--color-primary);
             margin: 50px;
             p {
@@ -149,7 +156,10 @@ main {
         }
         
 
-        #section-e {
+        #section-e,
+        #section-e2,
+        #section-e3,
+        #section-e4 {
             div {
                 grid-column: 2/4;
                 display: flex;
@@ -157,19 +167,20 @@ main {
                 flex-direction: row;
                 img {
                     margin: 3% auto;
-                    width: 300px;
-                    height: 425px;
+                    // width: 300px;
+                    height: 500px;
                     -webkit-box-shadow: 10px 10px 2px 0px rgba(255, 255, 255, 0.5);
                     box-shadow: 10px 10px 2px 0px rgba(255, 255, 255, 0.5);
                     margin-top: 3%;
                 }
                 div {
                     flex-direction: column;
-                    padding-left: 25px;
+                    padding-left: 20px;
                     text-align: left;
                 }
+                
             }
-            &:nth-child(2), &:nth-child(4) {
+            #section-e2, #section-e4 {
 
                 margin: 0 auto;
                 h2 {
@@ -180,6 +191,14 @@ main {
                     text-align: left;
                     margin: 0px auto;
                     max-width: 800px;
+                }
+            }
+            #section-e, #section-e3 {
+                p {
+                    text-align: left;
+                    margin: 0px auto;
+                    width: 100%;
+                    max-width: 1000px;
                 }
             }
         }
@@ -304,7 +323,10 @@ main {
 }
 .body {
     .about {
-        #section-e {
+        #section-e,
+        #section-e2,
+        #section-e3,
+        #section-e4 {
             margin: 50px auto;
             h2 {
                 font-size: 25px;
@@ -322,8 +344,8 @@ main {
                 flex-direction: column;
                 img {
                     margin: 50px auto;
-                    width: 270px;
-                    height: 365px;
+                    // width: 100%;
+                    max-height: 395px;
                     -webkit-box-shadow: 10px 10px 2px 0px rgba(255, 255, 255, 0.5);
                     box-shadow: 10px 10px 2px 0px rgba(255, 255, 255, 0.5);
                 }

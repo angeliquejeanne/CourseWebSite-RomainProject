@@ -25,6 +25,7 @@
     #main-footer {
         display: grid;
         grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+        -ms-grid-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
 
         div {
             grid-column: span 2;
