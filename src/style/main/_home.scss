@@ -292,10 +292,10 @@ main {
     margin-bottom: 20px;
     text-align: center;
 }
-[class^="icon--"] {
-    font-family: 'FontAwesome'; 
-    font-style: normal; 
-}
+// [class^="icon--"] {
+//     // font-family: 'FontAwesome'; 
+//     // font-style: normal; 
+// }
 
 [class^="social-button"] {
    	display: inline-flex; 
@@ -317,12 +317,13 @@ main {
 }
 
 .icon--linkedin::before {
-    content: '\f08c'; 
+    content: '\f0e1'; 
 }
 
 .icon--facebook::before {
-    content: '\f09a';
+    content: '\f39e';
 }
+
 
 .icon--youtube::before {
     content: '\f167'; 
