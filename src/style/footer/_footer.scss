@@ -14,8 +14,14 @@
         padding: 0;
 
         a {
+            color: var(--color-bg);
+            // text-decoration: none;
+            border-bottom: 1px solid var(--color-third);
+            text-transform: uppercase;
+        
+        &:hover {
             color: var(--color-third);
-            text-decoration: none;
+            }
         }
     }
     
