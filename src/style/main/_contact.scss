@@ -48,11 +48,13 @@ body {
         text-shadow: var(--color-second) 2px 0 10px;
         }
 
-        h3 {
+        h2 {
         font-weight: 400;
         font-size: 1.25em;
         margin: 1em 0 0.4em 0;
         color: var(--color-four);
+        background-color: rgba(166, 38, 9, 0.2);
+        border-radius: 999px;
         }
     } 
     .row.body {

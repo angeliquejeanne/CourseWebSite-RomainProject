@@ -78,10 +78,6 @@ button:hover, .btn:hover {
   border: 1px solid var(--color-third);
 }
 
-:root {
-  --img-primary: url("../../img/Etudiant-en-visio.jpg");
-}
-
 h1, h2, h3, h4, h5, h6, q {
   font-family: 'Playfair Display', serif;
 }
@@ -463,12 +459,12 @@ p, a, div, button {
 
 .main-content .dropdown .dropbtn {
   display: inline-block;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal;
   letter-spacing: 0.1em;
   -webkit-transition: color 0.2s;
   transition: color 0.2s;
-  background-color: var(--color-third);
+  background-color: transparent;
   color: var(--color-text);
   border: 1px solid var(--color-third);
   padding: 15px;
@@ -727,6 +723,7 @@ p, a, div, button {
   width: 100%;
   min-height: 500px;
   z-index: -1;
+  display: block;
 }
 
 #showcase .content-wrap {
@@ -1074,6 +1071,75 @@ main #section-a .content-wrap .content-text div p {
     border-top: 2px solid var(--color-primary);
     border-bottom: 2px solid var(--color-primary);
   }
+}
+
+.card__footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+
+.card__footer {
+  margin-top: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+[class^="social-button"] {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 3rem;
+  width: 3rem;
+  font-size: 1.4rem;
+  color: white;
+  border-radius: 50%;
+  text-decoration: none;
+  -webkit-transition: background-color 150ms ease-in-out;
+  transition: background-color 150ms ease-in-out;
+  margin-right: 0.1rem;
+}
+
+.icon--linkedin::before {
+  content: '\f0e1';
+}
+
+.icon--facebook::before {
+  content: '\f39e';
+}
+
+.icon--youtube::before {
+  content: '\f167';
+}
+
+.social-button--linkedin {
+  background-color: #0a66c2;
+}
+
+.social-button--linkedin:hover {
+  background-color: #0955a0;
+}
+
+.social-button--facebook {
+  background-color: #4b70ab;
+}
+
+.social-button--facebook:hover {
+  background-color: #3f5f91;
+}
+
+.social-button--youtube {
+  background-color: #ff0000;
+}
+
+.social-button--youtube:hover {
+  background-color: #d10000;
 }
 
 main #section-a {
@@ -1614,11 +1680,13 @@ body .row.header h1 {
   text-shadow: var(--color-second) 2px 0 10px;
 }
 
-body .row.header h3 {
+body .row.header h2 {
   font-weight: 400;
   font-size: 1.25em;
   margin: 1em 0 0.4em 0;
   color: var(--color-four);
+  background-color: rgba(166, 38, 9, 0.2);
+  border-radius: 999px;
 }
 
 body .row.body {
@@ -1795,8 +1863,13 @@ body .row.body form small {
 }
 
 #main-footer p a {
+  color: var(--color-bg);
+  border-bottom: 1px solid var(--color-third);
+  text-transform: uppercase;
+}
+
+#main-footer p a:hover {
   color: var(--color-third);
-  text-decoration: none;
 }
 
 @media (min-width: 700px) {

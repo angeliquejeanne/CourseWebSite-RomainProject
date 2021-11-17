@@ -310,11 +310,11 @@
         } 
         .dropbtn {
             display: inline-block;
-            font-weight: 500;
+            font-weight: 600;
             font-style: normal;
             letter-spacing: 0.1em;
             transition: color 0.2s;
-            background-color: var(--color-third);
+            background-color: transparent;
             color: var(--color-text);
             border: 1px solid var(--color-third);
             padding: 15px;
