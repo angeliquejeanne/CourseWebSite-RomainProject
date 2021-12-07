@@ -47,6 +47,7 @@ main {
 
 #section-b {
     padding: 1em;
+    background-color: var(--color-primary);
 
     h2 {
         color: var(--color-four);
@@ -105,7 +106,7 @@ main {
     }
 }
 .body {
-    // background-color: var(--color-bg);
+    background-color: var(--color-bg);
     .main-content  {
         margin-top: -50px;
     }
