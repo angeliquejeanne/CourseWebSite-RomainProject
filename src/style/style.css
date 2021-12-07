@@ -57,6 +57,10 @@ a {
   border: 2px solid var(--color-primary);
 }
 
+.body-bg {
+  background-color: var(--color-bg);
+}
+
 :root {
   --color-primary: #232826;
   --color-second: #A6A4A4;
@@ -791,10 +795,6 @@ p, a, div, button {
     padding: 40px 0px 40px;
     font-size: 1em;
   }
-}
-
-.container {
-  background-color: var(--color-bg);
 }
 
 main #section-a {
