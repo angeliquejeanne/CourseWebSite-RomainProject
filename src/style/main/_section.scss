@@ -1,11 +1,11 @@
 #showcase {
-    min-height: 500px;
+    min-height: 100%;
     color: var(--color-primary);
     text-align: center;
 
     .overlay {
         position: absolute;
-        min-height: 500px;
+        min-height: 100%;
         width: 100%;
         background-color: rgba(217, 217, 217, 0.4);
         z-index: 1;
@@ -18,13 +18,13 @@
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
-        min-height: 500px;
+        min-height: 100%;
         z-index: -1;
         display: block;
     }
 
     .content-wrap {
-        padding: 0 1.5em;
+        padding: 5rem 1.5em;
         position: relative;
         z-index: 10;
 
