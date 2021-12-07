@@ -1296,10 +1296,6 @@ main #section-a .content-wrap .content-text div p {
   color: var(--color-bg);
 }
 
-.container {
-  background-color: var(--color-bg);
-}
-
 .body .main-content {
   margin-top: -50px;
 }
