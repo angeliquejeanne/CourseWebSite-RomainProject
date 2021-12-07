@@ -851,6 +851,7 @@ main #section-a .content-wrap .content-text div p {
 
 #section-b {
   padding: 1em;
+  background-color: var(--color-primary);
 }
 
 #section-b h2 {
@@ -910,6 +911,10 @@ main #section-a .content-wrap .content-text div p {
   padding: 2em;
   background-color: var(--color-primary);
   color: var(--color-bg);
+}
+
+.body {
+  background-color: var(--color-bg);
 }
 
 .body .main-content {
