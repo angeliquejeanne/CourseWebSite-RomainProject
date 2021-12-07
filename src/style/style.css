@@ -793,6 +793,10 @@ p, a, div, button {
   }
 }
 
+.container {
+  background-color: var(--color-bg);
+}
+
 main #section-a {
   background: var(--color-bg);
   color: var(--color-primary);
@@ -1290,6 +1294,10 @@ main #section-a .content-wrap .content-text div p {
   padding: 2em;
   background-color: var(--color-primary);
   color: var(--color-bg);
+}
+
+.container {
+  background-color: var(--color-bg);
 }
 
 .body .main-content {
