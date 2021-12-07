@@ -912,10 +912,6 @@ main #section-a .content-wrap .content-text div p {
   color: var(--color-bg);
 }
 
-.body {
-  background-color: var(--color-bg);
-}
-
 .body .main-content {
   margin-top: -50px;
 }
@@ -1143,7 +1139,6 @@ main #section-a .content-wrap .content-text div p {
 }
 
 main #section-a {
-  background: var(--color-bg);
   color: var(--color-primary);
   padding-bottom: 2em;
 }
@@ -1290,10 +1285,6 @@ main #section-a .content-wrap .content-text div p {
   padding: 2em;
   background-color: var(--color-primary);
   color: var(--color-bg);
-}
-
-.body {
-  background-color: var(--color-bg);
 }
 
 .body .main-content {
